@@ -1,50 +1,19 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
-import { bebasNeue, dmSans, poppins } from '@/styles/fonts';
-import { Header } from '@/components/layout/header/header';
-import { Footer } from '@/components/layout/footer/footer';
-import { ConsentManager } from '@/components/analytics/consent';
-import { siteMetadata } from '@/config/metadata';
-import { BusinessSchema } from '@/components/seo-business-schema';
-import { AnchorNavigation } from '@/components/layout/anchor-navigation';
-import { PageTransition } from '@/components/layout/page-transition/page-transition';
-import { SectionEntrances } from '@/animations/section-entrances';
-import { FloatingContact } from '@/components/ui/floating-contact';
-import '@/styles/globals.css';
-import '@/styles/content-width.css';
-import '@/styles/content-typography.css';
+import { archivo, interTight } from '@/styles/fonts';
+import '@/components/higilimp/preview.css';
 
-export const viewport: Viewport = { themeColor: '#13213d' };
-export const metadata: Metadata = siteMetadata;
+export const viewport: Viewport = { themeColor: '#2d78e4' };
+export const metadata: Metadata = {
+  title: 'HigiLimp | Higienização de estofados em Joinville',
+  description:
+    'Higienização profissional de sofás, colchões e estofados para empresas e residências em Joinville e região.',
+  robots: { index: false, follow: false },
+};
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${bebasNeue.variable} ${dmSans.variable} ${poppins.variable}`}
-    >
-      <body>
-        <BusinessSchema />
-        <PageTransition />
-        <a href="#conteudo" className="skip-link tw:bg-ink">
-          Pular para o conteúdo
-        </a>
-        <div id="inicio" />
-        <Header />
-        {children}
-        <div
-          className="reference-divider reference-divider-footer"
-          aria-hidden="true"
-        >
-          {[0, 1, 2, 3, 4].map((n) => (
-            <i key={n} />
-          ))}
-        </div>
-        <Footer />
-        <FloatingContact />
-        <AnchorNavigation />
-        <SectionEntrances />
-        <ConsentManager />
-      </body>
+    <html lang="pt-BR" className={`${archivo.variable} ${interTight.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

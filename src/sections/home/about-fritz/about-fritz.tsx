@@ -55,7 +55,12 @@ export function AboutFritz() {
             '.about-fritz-word',
             { color: '#a2a9b1' },
             {
-              color: '#222222',
+              color: (_index: number, target: HTMLElement) =>
+                getComputedStyle(element)
+                  .getPropertyValue(
+                    target.dataset.accent === 'true' ? '--brand' : '--ink',
+                  )
+                  .trim(),
               stagger: 0.12,
               ease: 'none',
               scrollTrigger: {
@@ -105,7 +110,12 @@ export function AboutFritz() {
         <div className="about-fritz-heading">
           <h2 id="about-fritz-title" aria-label={aboutTitle}>
             {aboutTitle.split(' ').map((word) => (
-              <span className="about-fritz-word" key={word} aria-hidden="true">
+              <span
+                className="about-fritz-word"
+                key={word}
+                data-accent={word === 'sua' || word === 'casa.'}
+                aria-hidden="true"
+              >
                 {word}{' '}
               </span>
             ))}

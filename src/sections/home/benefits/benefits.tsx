@@ -19,7 +19,11 @@ export function Benefits() {
         <SectionEyebrow className="benefits-eyebrow">
           Por que escolher o Fritz
         </SectionEyebrow>
-        <TitleReveal id="benefits-title" text={benefitsContent.title} />
+        <TitleReveal
+          id="benefits-title"
+          text={benefitsContent.title}
+          accent="cuidado."
+        />
       </div>
       <div className="benefits-grid tw:grid">
         {benefitsContent.items.map((item) => (

@@ -199,6 +199,7 @@ export function Testimonials() {
           <TitleReveal
             id="testimonials-title"
             text="Quem recebeu esse cuidado conta."
+            accent="conta."
           />
         </div>
         <button

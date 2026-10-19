@@ -32,6 +32,7 @@ export function ServiceArea() {
           <TitleReveal
             id="service-area-title"
             text="Esse cuidado chega até você."
+            accent="até você."
           />
           <p>
             De Joinville ao litoral catarinense, o cuidado do Fritz encontra o

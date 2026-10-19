@@ -89,7 +89,11 @@ export function ServicesProjects() {
         <div className="service-projects-sticky">
           <div className="service-projects-content section">
             <div className="service-projects-heading">
-              <TitleReveal id="services-title" text={servicesContent.title} />
+              <TitleReveal
+                id="services-title"
+                text={servicesContent.title}
+                accent="Fritz"
+              />
               <p>{servicesContent.introduction}</p>
             </div>
             <section

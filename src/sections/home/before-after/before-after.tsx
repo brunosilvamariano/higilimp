@@ -21,6 +21,7 @@ export function BeforeAfter() {
           <TitleReveal
             id="comparison-title"
             text="O cuidado em cada detalhe."
+            accent="cada detalhe."
           />
         </div>
         <p>Observe os detalhes de cada superfície.</p>

@@ -125,7 +125,11 @@ export function Process() {
         <SectionEyebrow align="center" className="process-steps-eyebrow">
           Como funciona
         </SectionEyebrow>
-        <TitleReveal id="process-title" text="Do orçamento ao cuidado final" />
+        <TitleReveal
+          id="process-title"
+          text="Do orçamento ao cuidado final"
+          accent="cuidado final"
+        />
         <p className="process-steps-intro" data-text-anim="">
           Saiba como solicitar higienização ou impermeabilização de estofados
           com o Fritz.
