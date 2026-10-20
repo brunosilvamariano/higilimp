@@ -108,23 +108,23 @@ export function HigilimpBusinessHighlights() {
           );
           if (!title) return;
           const split = SplitText.create(title, {
-            type: 'lines',
-            mask: 'lines',
+            type: 'words',
             autoSplit: true,
             onSplit(self) {
               return gsap.fromTo(
-                self.lines,
-                { y: 30, opacity: 0 },
+                self.words,
+                { color: '#b6bac4' },
                 {
-                  y: 0,
-                  opacity: 1,
-                  duration: 0.8,
-                  stagger: 0.12,
-                  ease: 'power2.out',
+                  color: '#111214',
+                  duration: context.conditions?.desktop ? 0.5 : 0.18,
+                  stagger: context.conditions?.desktop ? 0.055 : 0.08,
+                  ease: 'none',
                   scrollTrigger: {
                     trigger: title,
                     start: 'top 85%',
-                    once: true,
+                    end: context.conditions?.desktop ? 'bottom 45%' : 'bottom 70%',
+                    scrub: context.conditions?.desktop ? 0.4 : 0.18,
+                    invalidateOnRefresh: true,
                   },
                 },
               );
