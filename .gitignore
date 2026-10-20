@@ -1,5 +1,6 @@
 node_modules/
 .next/
+.next-*/
 out/
 coverage/
 *.tsbuildinfo
@@ -8,11 +9,3 @@ coverage/
 *.log
 .DS_Store
 Thumbs.db
-.font-package-temp/
-.npm-cache-fonts/
-
-.next-audit/
-work/
-.next-preview/
-.next-tablet/
-.next-*/

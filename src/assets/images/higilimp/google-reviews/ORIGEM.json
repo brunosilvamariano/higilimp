@@ -1,0 +1,33 @@
+{
+  "verifiedAt": "2026-10-19",
+  "rating": "5,0",
+  "count": 227,
+  "business": "HigiLimp Oficial | Limpeza e Higienização de Estofados e Impermeabilização",
+  "source": "https://www.google.com/search?q=higilimp#lrd=0x94d945738925f9b9:0x88c752e48d51e918,1,,,,",
+  "customers": [
+    {
+      "name": "Josiane Nascimento",
+      "file": "josiane-nascimento.webp",
+      "profile": "https://www.google.com/maps/contrib/106143698215054195015/reviews?hl=pt-BR",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjWhBlLPamvzHHs3aoMwjehP4y6mJkRW-TNFanUtV5lIY2Lwo2XM=s64-c-rp-mo-br100"
+    },
+    {
+      "name": "Raphaela Del Carmen",
+      "file": "raphaela-del-carmen.webp",
+      "profile": "https://www.google.com/maps/contrib/110176522033329524081/reviews?hl=pt-BR",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjUzPTUCU9Ox44MDZxDKwt1tkBwXuxEeX0FVHiSRiaiGkm5TYA5qSw=s64-c-rp-mo-br100"
+    },
+    {
+      "name": "Adriana BL",
+      "file": "adriana-bl.webp",
+      "profile": "https://www.google.com/maps/contrib/107590876587665046156/reviews?hl=pt-BR",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIYkulKcXuJ4ITBVX9FufFnJRG-oSGYATp2_OmvFqtLcGLfAUw=s64-c-rp-mo-br100"
+    },
+    {
+      "name": "Richard Miranda Mainhardt",
+      "file": "richard-miranda-mainhardt.webp",
+      "profile": "https://www.google.com/maps/contrib/111752746277251115786/reviews?hl=pt-BR",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKn-IHTPssO57AFbo1UGKzTirrZdhgFIA26PlEpLIJHVkIrsA=s64-c-rp-mo-br100"
+    }
+  ]
+}

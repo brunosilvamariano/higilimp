@@ -1,5 +1,4 @@
 import type { NextConfig } from 'next';
-import { legacyRedirects } from './src/config/legacy-redirects';
 
 const securityHeaders = [
   { key: 'X-Content-Type-Options', value: 'nosniff' },
@@ -11,11 +10,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  distDir: process.env.FRITZ_BUILD_DIR || '.next',
+  distDir: process.env.HIGILIMP_BUILD_DIR || '.next',
   poweredByHeader: false,
-  async redirects() {
-    return legacyRedirects;
-  },
   experimental: { workerThreads: true, cpus: 1, useTypeScriptCli: false },
   images: { remotePatterns: [], qualities: [75, 85] },
   async headers() {

@@ -17,16 +17,8 @@ import { WhatsAppIcon } from '@/components/ui/social-icons';
 
 const whatsapp =
   'https://wa.me/5547992509755?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20higieniza%C3%A7%C3%A3o.';
-function adaptNavigation(item: { label: string; href: string }) {
-  return {
-    label: item.label.replace('Sobre o Fritz', 'Sobre a Higilimp'),
-    href: item.href
-      .replace('/#sobre-a-fritz', '#sobre-a-higilimp')
-      .replace('/#', '#'),
-  };
-}
-const mainLinks = primaryNavigation.map(adaptNavigation);
-const allLinks = navigation.map(adaptNavigation);
+const mainLinks = primaryNavigation;
+const allLinks = navigation;
 function Arrow() {
   return (
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -40,18 +32,29 @@ function Arrow() {
     </svg>
   );
 }
-function Contact({ header = false }: { header?: boolean }) {
+export function Contact({
+  header = false,
+  label,
+  href = whatsapp,
+  ariaLabel,
+}: {
+  header?: boolean;
+  label?: string;
+  href?: string;
+  ariaLabel?: string;
+}) {
   return (
     <a
       className={`higi-cta${header ? ' higi-cta-header' : ''}`}
-      href={whatsapp}
+      href={href}
+      aria-label={ariaLabel}
       target="_blank"
       rel="noopener noreferrer"
     >
       <span className="higi-cta-label">
-        <span>{header ? 'Vamos conversar' : 'Pedir orçamento'}</span>
+        <span>{label ?? (header ? 'Vamos conversar' : 'Pedir orçamento')}</span>
         <span aria-hidden="true">
-          {header ? 'Vamos conversar' : 'Pedir orçamento'}
+          {label ?? (header ? 'Vamos conversar' : 'Pedir orçamento')}
         </span>
       </span>
       <i>
@@ -290,7 +293,7 @@ export function HigilimpPreview() {
           </aside>
         </div>
         <div className="higi-menu-bottom">
-          <p>Prévia de apresentação · somente header e hero visíveis.</p>
+          <p>Prévia de apresentação · header, hero, faixa de confiança e seção empresarial.</p>
           <p role="status" aria-live="polite">
             {notice}
           </p>

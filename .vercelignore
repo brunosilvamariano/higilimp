@@ -2,7 +2,3 @@
 .next*
 node_modules
 .env*
-_imagens-projetos
-work
-tests
-docs

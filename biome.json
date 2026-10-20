@@ -6,8 +6,6 @@
       "!!node_modules",
       "!!.next",
       "!!.next-*",
-      "!!work",
-      "!!src/assets/icons/tabler",
       "!!out",
       "!!coverage",
       "!next-env.d.ts",

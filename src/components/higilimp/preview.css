@@ -734,3 +734,31 @@ h1 {
     transition: none;
   }
 }
+
+.higi-status {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  padding: clamp(24px, 6vw, 96px);
+  background: #f7f8fa;
+  color: #111214;
+}
+.higi-status h1 {
+  font-family: var(--font-archivo), sans-serif;
+  font-size: clamp(32px, 5vw, 64px);
+  max-width: 20ch;
+}
+.higi-status button,
+.higi-status a {
+  background: #2739ff;
+  border: 1px solid #214bdd;
+  border-radius: 999px;
+  padding: 14px 24px;
+  color: #fff;
+  box-shadow:
+    inset 0 1px 0 #ffffff73,
+    0 5px 14px #2739ff1a;
+}
