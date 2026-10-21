@@ -5,12 +5,12 @@ import { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
-import professional from '@/assets/images/higilimp/profissional-em-atendimento.webp';
+import professional from '@/assets/images/zelora/extracao-em-estofado.webp';
 import { Contact } from './preview';
 import './business-highlights.css';
 
 const whatsapp =
-  'https://wa.me/5547992509755?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20higieniza%C3%A7%C3%A3o%20de%20estofados%20da%20minha%20empresa.';
+  'https://wa.me/5547991597258?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20higieniza%C3%A7%C3%A3o%20de%20estofados%20da%20minha%20empresa.';
 function CleanSpark() {
   return (
     <svg
@@ -55,7 +55,7 @@ function ProcessIcon({ step }: { step: number }) {
 }
 function Marker() {
   return (
-    <span className="higi-business-marker" aria-hidden="true">
+    <span className="zelora-business-marker" aria-hidden="true">
       <b />
       <b />
     </span>
@@ -69,12 +69,12 @@ function TextCard({
   description: string;
 }) {
   return (
-    <article className="higi-business-card">
+    <article className="zelora-business-card">
       <header>
         <h3>{title}</h3>
         <Marker />
       </header>
-      <div className="higi-business-card-copy">
+      <div className="zelora-business-card-copy">
         <p>{description}</p>
         <Contact
           label="Consultar atendimento"
@@ -82,11 +82,11 @@ function TextCard({
           ariaLabel={`Consultar ${title.toLowerCase()} pelo WhatsApp — nova aba`}
         />
       </div>
-      <span className="higi-business-reveal" aria-hidden="true" />
+      <span className="zelora-business-reveal" aria-hidden="true" />
     </article>
   );
 }
-export function HigilimpBusinessHighlights() {
+export function ZeloraBusinessHighlights() {
   const root = useRef<HTMLElement>(null);
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -104,7 +104,7 @@ export function HigilimpBusinessHighlights() {
           const element = root.current;
           if (!element) return;
           const title = element.querySelector<HTMLElement>(
-            '.higi-business-title',
+            '.zelora-business-title',
           );
           if (!title) return;
           const split = SplitText.create(title, {
@@ -122,7 +122,9 @@ export function HigilimpBusinessHighlights() {
                   scrollTrigger: {
                     trigger: title,
                     start: 'top 85%',
-                    end: context.conditions?.desktop ? 'bottom 45%' : 'bottom 70%',
+                    end: context.conditions?.desktop
+                      ? 'bottom 45%'
+                      : 'bottom 70%',
                     scrub: context.conditions?.desktop ? 0.4 : 0.18,
                     invalidateOnRefresh: true,
                   },
@@ -130,7 +132,7 @@ export function HigilimpBusinessHighlights() {
               );
             },
           });
-          const eyebrow = element.querySelector('.higi-business-eyebrow');
+          const eyebrow = element.querySelector('.zelora-business-eyebrow');
           if (eyebrow)
             gsap.from(eyebrow, {
               y: 30,
@@ -140,7 +142,7 @@ export function HigilimpBusinessHighlights() {
               clearProps: 'opacity,transform',
               scrollTrigger: { trigger: eyebrow, start: 'top 90%', once: true },
             });
-          const bottom = element.querySelector('.higi-business-intro-bottom');
+          const bottom = element.querySelector('.zelora-business-intro-bottom');
           if (bottom)
             gsap.from(bottom.children, {
               y: 30,
@@ -152,10 +154,10 @@ export function HigilimpBusinessHighlights() {
               scrollTrigger: { trigger: bottom, start: 'top 90%', once: true },
             });
           const cards = [
-            ...element.querySelectorAll<HTMLElement>('.higi-business-card'),
+            ...element.querySelectorAll<HTMLElement>('.zelora-business-card'),
           ];
           cards.forEach((card, index) => {
-            const curtain = card.querySelector('.higi-business-reveal');
+            const curtain = card.querySelector('.zelora-business-reveal');
             if (!curtain) return;
             const timeline = gsap.timeline({
               delay: context.conditions?.desktop ? index * 0.16 : 0,
@@ -200,36 +202,36 @@ export function HigilimpBusinessHighlights() {
     <section
       ref={root}
       id="higienizacao-empresarial"
-      className="higi-business"
-      aria-labelledby="higi-business-title"
+      className="zelora-business"
+      aria-labelledby="zelora-business-title"
     >
-      <div className="higi-business-inner">
-        <div className="higi-business-intro">
-          <p className="higi-business-eyebrow">
-            <span className="higi-business-ornament" aria-hidden="true">
-              <span className="higi-business-ornament-line" />
+      <div className="zelora-business-inner">
+        <div className="zelora-business-intro">
+          <p className="zelora-business-eyebrow">
+            <span className="zelora-business-ornament" aria-hidden="true">
+              <span className="zelora-business-ornament-line" />
               <CleanSpark />
             </span>
             <span>Higienização empresarial</span>
-            <span className="higi-business-ornament" aria-hidden="true">
+            <span className="zelora-business-ornament" aria-hidden="true">
               <CleanSpark />
-              <span className="higi-business-ornament-line" />
+              <span className="zelora-business-ornament-line" />
             </span>
           </p>
-          <h2 id="higi-business-title" className="higi-business-title">
+          <h2 id="zelora-business-title" className="zelora-business-title">
             Da recepção ao escritório, cuidamos dos estofados da sua empresa com
             técnica, atenção aos materiais e um atendimento planejado para a sua
             rotina.
           </h2>
-          <div className="higi-business-intro-bottom">
+          <div className="zelora-business-intro-bottom">
             <p>
               Tapetes, carpetes, cadeiras e estofados em Joinville e região.
             </p>
             <Contact />
           </div>
         </div>
-        <div className="higi-business-grid">
-          <article className="higi-business-card higi-business-process">
+        <div className="zelora-business-grid">
+          <article className="zelora-business-card zelora-business-process">
             <header>
               <h3>
                 Técnica em
@@ -238,17 +240,17 @@ export function HigilimpBusinessHighlights() {
               </h3>
               <Marker />
             </header>
-            <ol className="higi-business-steps">
+            <ol className="zelora-business-steps">
               {[
                 { title: 'Avaliação', detail: 'Identificação do tecido' },
                 { title: 'Aplicação', detail: 'Produto adequado' },
                 { title: 'Extração', detail: 'Limpeza das fibras' },
               ].map((step, index) => (
                 <li key={step.title}>
-                  <span className="higi-business-step-icon">
+                  <span className="zelora-business-step-icon">
                     <ProcessIcon step={index + 1} />
                   </span>
-                  <div className="higi-business-step-copy">
+                  <div className="zelora-business-step-copy">
                     <span>
                       <small>{String(index + 1).padStart(2, '0')}</small>
                       <strong>{step.title}</strong>
@@ -258,20 +260,20 @@ export function HigilimpBusinessHighlights() {
                 </li>
               ))}
             </ol>
-            <span className="higi-business-reveal" aria-hidden="true" />
+            <span className="zelora-business-reveal" aria-hidden="true" />
           </article>
           <TextCard
             title="Limpeza profunda."
             description="Remoção de resíduos e sujeiras acumuladas nas fibras de tapetes, carpetes e estofados."
           />
-          <figure className="higi-business-card higi-business-photo">
+          <figure className="zelora-business-card zelora-business-photo">
             <Image
               src={professional}
-              alt="Proprietário da Higilimp em atendimento, com equipamento de higienização ao fundo"
+              alt="Imagem ilustrativa gerada por IA de extração em um estofado azul"
               fill
               sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 25vw"
             />
-            <span className="higi-business-reveal" aria-hidden="true" />
+            <span className="zelora-business-reveal" aria-hidden="true" />
           </figure>
           <TextCard
             title="Sua empresa bem cuidada."

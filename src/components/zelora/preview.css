@@ -32,7 +32,7 @@ p,
 h1 {
   margin: 0;
 }
-.higi-preview {
+.zelora-preview {
   position: relative;
   margin: 20px;
   min-height: calc(100svh - 40px);
@@ -40,7 +40,7 @@ h1 {
   isolation: isolate;
   background: transparent;
 }
-.higi-skip {
+.zelora-skip {
   position: fixed;
   left: 20px;
   top: -100px;
@@ -49,10 +49,10 @@ h1 {
   background: #fff;
   color: #064e90;
 }
-.higi-skip:focus {
+.zelora-skip:focus {
   top: 20px;
 }
-.higi-header {
+.zelora-header {
   position: absolute;
   inset: 0 0 auto;
   z-index: 5;
@@ -62,18 +62,18 @@ h1 {
   height: 80px;
   padding: 0 4.5%;
 }
-.higi-logo {
+.zelora-logo {
   width: 153px;
   display: block;
 }
-.higi-logo img {
+.zelora-logo img {
   display: block;
   width: 100%;
   height: auto;
   max-height: 66px;
   object-fit: contain;
 }
-.higi-nav {
+.zelora-nav {
   position: absolute;
   left: 50%;
   top: 0;
@@ -85,7 +85,7 @@ h1 {
   padding: 0 60px;
   color: #111214;
 }
-.higi-nav-shape {
+.zelora-nav-shape {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -116,28 +116,28 @@ h1 {
   z-index: -1;
   pointer-events: none;
 }
-.higi-nav a {
+.zelora-nav a {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.01em;
   white-space: nowrap;
   transition: color 0.2s;
 }
-.higi-nav a + a:before {
+.zelora-nav a + a:before {
   content: '/';
   color: #9ea3ae;
   margin-right: 15px;
 }
-.higi-nav a[aria-current],
-.higi-nav a:hover {
+.zelora-nav a[aria-current],
+.zelora-nav a:hover {
   color: #2739ff;
 }
-.higi-header-actions {
+.zelora-header-actions {
   display: flex;
   gap: 13px;
   align-items: center;
 }
-.higi-cta {
+.zelora-cta {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -154,11 +154,11 @@ h1 {
     transform 0.25s,
     box-shadow 0.25s;
 }
-.higi-cta:hover {
+.zelora-cta:hover {
   background: #2739ff;
   color: #fff;
 }
-.higi-cta i {
+.zelora-cta i {
   display: grid;
   place-items: center;
   border-radius: 50%;
@@ -168,20 +168,20 @@ h1 {
   box-shadow: none;
   color: white;
 }
-.higi-cta svg {
+.zelora-cta svg {
   width: 23px;
   height: 23px;
 }
-.higi-cta-header {
+.zelora-cta-header {
   font-size: 16px;
   gap: 10px;
   padding-left: 24px;
 }
-.higi-cta-header i {
+.zelora-cta-header i {
   width: 40px;
   height: 40px;
 }
-.higi-menu-toggle {
+.zelora-menu-toggle {
   border: 0;
   border-radius: 50%;
   width: 44px;
@@ -191,14 +191,14 @@ h1 {
   place-content: center;
   gap: 4px;
 }
-.higi-menu-toggle span {
+.zelora-menu-toggle span {
   display: block;
   background: #111214;
   width: 19px;
   height: 1.4px;
   transition: transform 0.2s;
 }
-.higi-hero {
+.zelora-hero {
   position: relative;
   min-height: 640px;
   height: calc(100svh - 40px);
@@ -206,7 +206,7 @@ h1 {
   overflow: hidden;
   border-radius: 20px;
 }
-.higi-word {
+.zelora-word {
   position: absolute;
   top: 80px;
   left: 50%;
@@ -222,34 +222,24 @@ h1 {
   color: transparent;
   user-select: none;
 }
-.higi-glow {
+.zelora-glow {
   position: absolute;
   inset: 15% 8% 0;
   background: none;
 }
-.higi-owner {
-  position: absolute;
-  bottom: -7%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 92%;
-  width: auto;
-  max-width: none;
-  object-fit: contain;
-}
-.higi-shade {
+.zelora-shade {
   position: absolute;
   inset: 0;
   background: linear-gradient(0deg, #0009, transparent 60%);
 }
-.higi-copy {
+.zelora-copy {
   position: absolute;
   bottom: 130px;
   left: 4.5%;
   max-width: 57%;
   z-index: 2;
 }
-.higi-eyebrow {
+.zelora-eyebrow {
   font-size: 11px;
   letter-spacing: 0.15em;
   margin-bottom: 22px;
@@ -258,14 +248,14 @@ h1 {
   gap: 9px;
   color: #d3eefa;
 }
-.higi-eyebrow span {
+.zelora-eyebrow span {
   height: 5px;
   width: 5px;
   background: #a5e3ff;
   box-shadow: 0 0 0 4px #a5e3ff18;
   border-radius: 50%;
 }
-.higi-copy h1 {
+.zelora-copy h1 {
   font-family: var(--font-archivo), sans-serif;
   font-weight: 500;
   font-size: clamp(42px, 4.584vw, 88px);
@@ -273,106 +263,91 @@ h1 {
   line-height: 1.1;
   text-wrap: balance;
 }
-.higi-description {
+.zelora-description {
   position: absolute;
   right: 4.5%;
   bottom: 130px;
   width: 25%;
   z-index: 2;
 }
-.higi-description > p {
+.zelora-description > p {
   font-size: 18px;
   letter-spacing: -0.01em;
   line-height: 1.5;
   color: #fff;
   margin-bottom: 27px;
 }
-.higi-footnote {
+.zelora-footnote {
   display: block;
   font-size: 10px;
   letter-spacing: 0.02em;
   color: #b1c9da;
   margin-top: 15px;
 }
-.higi-mobile-break {
+.zelora-mobile-break {
   display: none;
 }
 @media (min-width: 1600px) {
-  .higi-owner {
-    height: 96%;
-    bottom: -12%;
-  }
-  .higi-hero {
+  .zelora-hero {
     min-height: 740px;
   }
 }
 @media (max-width: 1100px) {
-  .higi-nav {
+  .zelora-nav {
     gap: 15px;
     padding: 0 45px;
   }
-  .higi-nav a + a:before {
+  .zelora-nav a + a:before {
     margin-right: 15px;
   }
-  .higi-cta-header {
+  .zelora-cta-header {
     display: none;
   }
-  .higi-copy {
+  .zelora-copy {
     max-width: 58%;
   }
-  .higi-description {
+  .zelora-description {
     width: 29%;
   }
-  .higi-owner {
-    height: 84%;
-    bottom: 0;
-  }
-  .higi-hero {
+  .zelora-hero {
     min-height: 780px;
   }
 }
 @media (max-width: 700px) {
-  .higi-preview {
+  .zelora-preview {
     margin: 8px;
     border-radius: 20px;
     min-height: calc(100svh - 16px);
   }
-  .higi-header {
+  .zelora-header {
     height: 80px;
     padding: 0 22px;
   }
-  .higi-logo {
+  .zelora-logo {
     width: 120px;
   }
-  .higi-nav {
+  .zelora-nav {
     display: none;
   }
-  .higi-menu-toggle {
+  .zelora-menu-toggle {
     width: 39px;
     height: 39px;
   }
 
-  .higi-hero {
+  .zelora-hero {
     height: auto;
     min-height: 920px;
     border-radius: 20px;
   }
-  .higi-word {
+  .zelora-word {
     top: 112px;
     font-size: 14vw;
     letter-spacing: -0.065em;
   }
-  .higi-owner {
-    height: 520px;
-    top: 160px;
-    bottom: auto;
-    left: 50%;
-    max-width: none;
-  }
-  .higi-glow {
+  .zelora-glow {
     inset: 120px 0 25%;
   }
-  .higi-shade {
+  .zelora-shade {
     background: linear-gradient(
       180deg,
       transparent 42%,
@@ -381,7 +356,7 @@ h1 {
       #111214 100%
     );
   }
-  .higi-copy {
+  .zelora-copy {
     position: relative;
     left: auto;
     right: auto;
@@ -390,20 +365,20 @@ h1 {
     max-width: none;
     padding: 590px 26px 0;
   }
-  .higi-eyebrow {
+  .zelora-eyebrow {
     font-size: 9px;
     letter-spacing: 0.13em;
     margin-bottom: 17px;
   }
-  .higi-copy h1 {
+  .zelora-copy h1 {
     font-size: clamp(32px, 11vw, 43px);
     line-height: 1.06;
     max-width: 330px;
   }
-  .higi-mobile-break {
+  .zelora-mobile-break {
     display: block;
   }
-  .higi-description {
+  .zelora-description {
     position: relative;
     left: auto;
     right: auto;
@@ -411,21 +386,21 @@ h1 {
     padding: 24px 26px 33px;
     width: auto;
   }
-  .higi-description > p {
+  .zelora-description > p {
     font-size: 14px;
     max-width: 340px;
     margin-bottom: 22px;
   }
-  .higi-cta {
+  .zelora-cta {
     font-size: 13px;
     gap: 25px;
     padding-left: 20px;
   }
-  .higi-cta i {
+  .zelora-cta i {
     width: 35px;
     height: 35px;
   }
-  .higi-footnote {
+  .zelora-footnote {
     font-size: 9px;
   }
 }
@@ -441,7 +416,7 @@ h1 {
   }
 }
 
-.higi-menu-dialog {
+.zelora-menu-dialog {
   position: fixed;
   inset: 0;
   margin: 0;
@@ -456,21 +431,21 @@ h1 {
   overflow: auto;
   overscroll-behavior: contain;
 }
-.higi-menu-dialog::backdrop {
+.zelora-menu-dialog::backdrop {
   background: #001a2dcc;
   backdrop-filter: blur(8px);
 }
-.higi-menu-dialog[open] {
+.zelora-menu-dialog[open] {
   display: flex;
   flex-direction: column;
-  animation: higi-menu-enter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: zelora-menu-enter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-.higi-menu-top {
+.zelora-menu-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.higi-menu-close {
+.zelora-menu-close {
   position: relative;
   display: grid;
   place-content: center;
@@ -483,7 +458,7 @@ h1 {
     inset 0 1px #fff,
     0 4px 14px #0002;
 }
-.higi-menu-close span {
+.zelora-menu-close span {
   position: absolute;
   left: 13px;
   top: 23px;
@@ -492,17 +467,17 @@ h1 {
   background: #163449;
   transform: rotate(45deg);
 }
-.higi-menu-close span + span {
+.zelora-menu-close span + span {
   transform: rotate(-45deg);
 }
-.higi-menu-body {
+.zelora-menu-body {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(230px, 0.36fr);
   gap: 6%;
   margin: auto 0;
   padding: 55px 0 40px;
 }
-.higi-menu-eyebrow {
+.zelora-menu-eyebrow {
   margin-bottom: 26px;
   font-size: 11px;
   line-height: 1.5;
@@ -510,12 +485,12 @@ h1 {
   text-transform: uppercase;
   color: #99b4c4;
 }
-.higi-menu-grid {
+.zelora-menu-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
-.higi-menu-grid > a {
+.zelora-menu-grid > a {
   display: grid;
   grid-template-columns: 27px 1fr 22px;
   align-items: center;
@@ -532,34 +507,34 @@ h1 {
     border-color 0.25s,
     transform 0.25s;
 }
-.higi-menu-grid > a:hover {
+.zelora-menu-grid > a:hover {
   background: #123950;
   border-color: #7ec4ea4d;
   transform: translateY(-2px);
 }
-.higi-menu-number {
+.zelora-menu-number {
   font-size: 10px;
   letter-spacing: 0.05em;
   color: #80a3b9;
 }
-.higi-menu-grid svg {
+.zelora-menu-grid svg {
   width: 20px;
   color: #82bee3;
 }
-.higi-menu-contact {
+.zelora-menu-contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 0;
 }
-.higi-menu-contact h2 {
+.zelora-menu-contact h2 {
   margin: 0 0 30px;
   font-weight: 450;
   font-size: clamp(30px, 3vw, 52px);
   line-height: 1.1;
   letter-spacing: -0.045em;
 }
-.higi-menu-details {
+.zelora-menu-details {
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -567,15 +542,15 @@ h1 {
   color: #afc0cb;
   font-size: 14px;
 }
-.higi-menu-details a {
+.zelora-menu-details a {
   display: flex;
   gap: 8px;
   align-items: center;
 }
-.higi-menu-details svg {
+.zelora-menu-details svg {
   width: 18px;
 }
-.higi-menu-bottom {
+.zelora-menu-bottom {
   display: flex;
   justify-content: space-between;
   gap: 24px;
@@ -585,10 +560,10 @@ h1 {
   line-height: 1.6;
   color: #8ea2b0;
 }
-.higi-menu-bottom p[role='status'] {
+.zelora-menu-bottom p[role='status'] {
   color: #a4daf8;
 }
-@keyframes higi-menu-enter {
+@keyframes zelora-menu-enter {
   from {
     clip-path: inset(0 0 100% 0);
   }
@@ -597,43 +572,43 @@ h1 {
   }
 }
 @media (max-width: 1100px) {
-  .higi-menu-body {
+  .zelora-menu-body {
     gap: 35px;
     grid-template-columns: 1fr 230px;
   }
-  .higi-menu-grid > a {
+  .zelora-menu-grid > a {
     padding: 19px 15px;
     grid-template-columns: 20px 1fr 18px;
     gap: 8px;
   }
 }
 @media (max-width: 700px) {
-  .higi-menu-dialog {
+  .zelora-menu-dialog {
     padding: 26px 24px 24px;
   }
-  .higi-menu-close {
+  .zelora-menu-close {
     width: 40px;
     height: 40px;
   }
-  .higi-menu-close span {
+  .zelora-menu-close span {
     top: 19px;
     left: 10px;
     width: 19px;
   }
-  .higi-menu-body {
+  .zelora-menu-body {
     grid-template-columns: 1fr;
     padding: 35px 0 28px;
     margin: 0;
     gap: 36px;
   }
-  .higi-menu-eyebrow {
+  .zelora-menu-eyebrow {
     margin-bottom: 17px;
     font-size: 10px;
   }
-  .higi-menu-grid {
+  .zelora-menu-grid {
     gap: 9px;
   }
-  .higi-menu-grid > a {
+  .zelora-menu-grid > a {
     padding: 15px 12px;
     min-height: 83px;
     grid-template-columns: 1fr 16px;
@@ -641,82 +616,82 @@ h1 {
     line-height: 1.2;
     letter-spacing: -0.02em;
   }
-  .higi-menu-number {
+  .zelora-menu-number {
     grid-column: 1/-1;
     font-size: 9px;
   }
-  .higi-menu-grid svg {
+  .zelora-menu-grid svg {
     width: 16px;
   }
-  .higi-menu-contact h2 {
+  .zelora-menu-contact h2 {
     font-size: 34px;
     margin-bottom: 22px;
   }
-  .higi-menu-details {
+  .zelora-menu-details {
     margin-top: 25px;
     gap: 13px;
   }
-  .higi-menu-bottom {
+  .zelora-menu-bottom {
     flex-direction: column;
     gap: 10px;
     font-size: 10px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .higi-menu-dialog[open],
-  .higi-owner {
+  .zelora-menu-dialog[open],
+  .zelora-owner {
     animation: none;
   }
-  .higi-menu-grid > a,
-  .higi-cta,
-  .higi-nav a {
+  .zelora-menu-grid > a,
+  .zelora-cta,
+  .zelora-nav a {
     transition: none;
   }
 }
 
-.higi-cta-label {
+.zelora-cta-label {
   display: block;
   position: relative;
   overflow: hidden;
   line-height: 1.2;
 }
-.higi-cta .higi-cta-label > span {
+.zelora-cta .zelora-cta-label > span {
   display: block;
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.higi-cta .higi-cta-label > span + span {
+.zelora-cta .zelora-cta-label > span + span {
   position: absolute;
   inset: 0;
   transform: translateY(120%);
 }
-.higi-cta:is(:hover, :focus-visible) .higi-cta-label > span:first-child {
+.zelora-cta:is(:hover, :focus-visible) .zelora-cta-label > span:first-child {
   transform: translateY(-120%);
 }
-.higi-cta:is(:hover, :focus-visible) .higi-cta-label > span + span {
+.zelora-cta:is(:hover, :focus-visible) .zelora-cta-label > span + span {
   transform: translateY(0);
 }
-.higi-cta i {
+.zelora-cta i {
   position: relative;
   overflow: hidden;
 }
-.higi-cta i svg {
+.zelora-cta i svg {
   position: absolute;
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.higi-cta i svg + svg {
+.zelora-cta i svg + svg {
   transform: translateX(-160%);
 }
-.higi-cta:is(:hover, :focus-visible) i svg:first-child {
+.zelora-cta:is(:hover, :focus-visible) i svg:first-child {
   transform: translateX(160%);
 }
-.higi-cta:is(:hover, :focus-visible) i svg + svg {
+.zelora-cta:is(:hover, :focus-visible) i svg + svg {
   transform: translateX(0);
 }
-.higi-menu-dialog[open] .higi-menu-body,
-.higi-menu-dialog[open] .higi-menu-bottom {
-  animation: higi-menu-content 0.6s 0.8s both;
+.zelora-menu-dialog[open] .zelora-menu-body,
+.zelora-menu-dialog[open] .zelora-menu-bottom {
+  animation: zelora-menu-content 0.6s 0.8s both;
 }
-@keyframes higi-menu-content {
+@keyframes zelora-menu-content {
   from {
     opacity: 0;
   }
@@ -725,17 +700,17 @@ h1 {
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .higi-menu-dialog[open] .higi-menu-body,
-  .higi-menu-dialog[open] .higi-menu-bottom {
+  .zelora-menu-dialog[open] .zelora-menu-body,
+  .zelora-menu-dialog[open] .zelora-menu-bottom {
     animation: none;
   }
-  .higi-cta .higi-cta-label > span,
-  .higi-cta i svg {
+  .zelora-cta .zelora-cta-label > span,
+  .zelora-cta i svg {
     transition: none;
   }
 }
 
-.higi-status {
+.zelora-status {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -746,13 +721,13 @@ h1 {
   background: #f7f8fa;
   color: #111214;
 }
-.higi-status h1 {
+.zelora-status h1 {
   font-family: var(--font-archivo), sans-serif;
   font-size: clamp(32px, 5vw, 64px);
   max-width: 20ch;
 }
-.higi-status button,
-.higi-status a {
+.zelora-status button,
+.zelora-status a {
   background: #2739ff;
   border: 1px solid #214bdd;
   border-radius: 999px;
@@ -761,4 +736,72 @@ h1 {
   box-shadow:
     inset 0 1px 0 #ffffff73,
     0 5px 14px #2739ff1a;
+}
+
+.zelora-site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  padding: 32px 5%;
+  border-top: 1px solid #dce3ee;
+  background: #f7f8fa;
+  color: #686c75;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.zelora-site-footer p {
+  margin: 0;
+  max-width: 55ch;
+}
+.zelora-site-footer strong {
+  color: #111214;
+}
+.zelora-site-footer a {
+  color: #2739ff;
+  font-weight: 500;
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .zelora-site-footer {
+    padding: 28px 24px;
+  }
+}
+
+.zelora-owner {
+  position: absolute;
+  bottom: -7%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 92%;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+}
+@media (min-width: 1600px) {
+  .zelora-owner {
+    height: 96%;
+    bottom: -12%;
+  }
+}
+@media (max-width: 1100px) {
+  .zelora-owner {
+    height: 84%;
+    bottom: 0;
+  }
+}
+@media (max-width: 700px) {
+  .zelora-owner {
+    height: 520px;
+    top: 160px;
+    bottom: auto;
+    left: 50%;
+    max-width: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .zelora-owner {
+    animation: none;
+  }
 }

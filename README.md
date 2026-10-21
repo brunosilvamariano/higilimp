@@ -1,31 +1,32 @@
-# Higilimp
+# Zelora Higienização
 
-Prévia da Higilimp com header e hero, faixa de confiança e higienização empresarial, migrados do backup. As seções ainda não adaptadas permanecem no backup externo; o menu mantém a indicação de prévia para essas seções.
+Projeto de apresentação para Joinville e região, com contato (47) 99159-7258. Identidade própria, logo SVG e imagens ilustrativas geradas por IA em WebP. Sem avaliações, equipe ou histórico de terceiros.
 
 ## Executar
 
-Use a versão de Node indicada em .node-version.
+Use Node 22.22.2 e npm 11.15.0.
 
 ```powershell
 npm ci
 npm run dev
 ```
 
-## Validar
+## Verificar
 
 ```powershell
 npm run check
 npm run build
 ```
 
+## Publicação
+
+Defina SITE_URL com a origem real em seu ambiente de hospedagem. A prévia permanece com noindex até revisão do conteúdo. Não foi configurado domínio ou repositório de outra empresa.
+
 ## Estrutura
 
-- src/app: página, layout, ícones e páginas de erro.
-- src/components/higilimp: as três partes da prévia.
+- src/app: página, metadados e ícones.
+- src/components/zelora: header e hero, faixa, seção empresarial e diferenciais.
 - src/components/ui: ícone vetorial do WhatsApp.
 - src/config: navegação.
 - src/styles: fontes locais.
-- src/assets/fonts: Archivo e Inter Tight, com licenças.
-- src/assets/images/higilimp: imagens e procedência das avaliações.
-
-Não há public, work, docs, scripts ou testes herdados sem uso. node_modules e .next serão gerados ao instalar e executar. A prévia permanece com noindex e a imagem social existente no backup.
+- src/assets: fontes com licença, SVG da marca e duas imagens WebP.

@@ -10,7 +10,7 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  distDir: process.env.HIGILIMP_BUILD_DIR || '.next',
+  distDir: process.env.ZELORA_BUILD_DIR || '.next',
   poweredByHeader: false,
   experimental: { workerThreads: true, cpus: 1, useTypeScriptCli: false },
   images: { remotePatterns: [], qualities: [75, 85] },

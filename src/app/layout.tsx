@@ -1,29 +1,29 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
-import homeImage from '@/assets/images/higilimp/proprietario.webp';
+import homeImage from '@/assets/images/zelora/sala-com-sofa.webp';
 import { archivo, interTight } from '@/styles/fonts';
-import '@/components/higilimp/preview.css';
+import '@/components/zelora/preview.css';
 
-const title = 'HigiLimp | Higienização de estofados em Joinville';
+const title = 'Zelora Higienização | Estofados em Joinville';
 const description =
   'Higienização profissional de sofás, colchões e estofados para empresas e residências em Joinville e região.';
 const shareImage = {
   url: homeImage.src,
   width: homeImage.width,
   height: homeImage.height,
-  alt: 'Proprietário da HigiLimp, de uniforme e braços cruzados',
+  alt: 'Sala com sofá azul — imagem ilustrativa da Zelora Higienização',
   type: 'image/webp',
 };
 
 export const viewport: Viewport = { themeColor: '#2d78e4' };
 export const metadata: Metadata = {
-  metadataBase: new URL('https://higilimp.vercel.app/'),
+  metadataBase: new URL(process.env.SITE_URL || 'http://localhost:3000'),
   title,
   description,
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    siteName: 'HigiLimp',
+    siteName: 'Zelora',
     url: '/',
     title,
     description,
